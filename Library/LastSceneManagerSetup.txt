@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/PGUI/demo03.unity
+  isLoaded: 1
+  isActive: 1

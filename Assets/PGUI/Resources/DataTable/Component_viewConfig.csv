@@ -1,0 +1,6 @@
+﻿ID,ComponentName,value
+Tip_1000,ControllerState_00,white_bg/手柄已断开，即将切换到头控模式---00000
+Tip_1001,ControllerState_01,white_bg/controller_recenter/手柄已连接，请长按手柄【HOME】将射线调整至正中
+Tip_1002,ControllerState_02,white_bg/当前应用均是最新版，无需更新
+Tip_1003,ControllerState_03,white_bg/height_Tempture/手柄已连接，请长按手柄【HOME】将射线调整至正中
+Tip_1004,ControllerState_04,white_bg/此配件与当前设备不兼容，请更换配件
