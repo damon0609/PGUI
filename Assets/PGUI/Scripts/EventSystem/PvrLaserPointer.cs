@@ -13,9 +13,9 @@ public class PvrLaserPointer : PvrBasePoint
         m_IsActive = true;
         m_lineRenderer = GetComponent<LineRenderer>();
         originPos = ray.origin;
+        ray.direction = (pointerTrans.rotation * Vector3.forward).normalized;
         if (!isHit)
-            endPos = ray.direction.normalized * maxPointDistance;
-
+            endPos = ray.origin + ray.direction * maxPointDistance;
 #if UNITY_EDITOR
         m_lineRenderer.enabled = m_IsActiveLineRender;
 #elif !UNITY_EDITOR&&UNITY_ANDROID

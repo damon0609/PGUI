@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/Damon/Year_2019/Work/apk/demo02.apk
+D:/Damon/Year_2019/Work/apk/demo03.apk
 SceneListBegin?
 Assets/PGUI/demo03.unity
 SceneListEnd?
@@ -138,7 +138,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
-53ed1a1cecc7533adf96b99e4221d72d Assembly-CSharp.dll:.PvrLaserPointer
+836ef5c0b0ca3b0d43cb4fbb2b50f4ab Assembly-CSharp.dll:.PvrLaserPointer
 cf175180c8744e549bbb31515b41da29 Assembly-CSharp.dll:.Pvr_TouchVisual
 4a1cd99b7a21ee41fe475339428117d0 Assembly-CSharp.dll:.Pvr_GazeInputModule
 bbde2e67f1e46179ad3c221a69603522 Assembly-CSharp.dll:.DemoController
@@ -149,7 +149,7 @@ bc3dffe5a1dbcb1180dee561995678ec Assembly-CSharp.dll:.Pvr_UnitySDKManager
 5f6fd4e07a43241aa6e2b62b8489598f Assembly-CSharp.dll:.Pvr_Audio3D
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LoadingRatation
 203fd0e292a0878c1314c60754de3829 Assembly-CSharp.dll:.Pvr_UnitySDKFPSs
-53ed1a1cecc7533adf96b99e4221d72d Assembly-CSharp.dll:.PvrBasePoint
+836ef5c0b0ca3b0d43cb4fbb2b50f4ab Assembly-CSharp.dll:.PvrBasePoint
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Pvr_AudioUnlock
 993cf669f80df92c5e527c2955a8a558 Assembly-CSharp.dll:.InputControllerManager
 06f6a4e27dae811a5634f65ad3f64f40 Assembly-CSharp.dll:.Pvr_ControllerDemo
@@ -212,3 +212,4 @@ a2313de45ed47f1a12bb2d80e8b2de54 Assembly-CSharp.dll:.Pvr_UIGraphicRaycaster
 3ede8da4b1b086eaa1eb91c173bc2a08 Assembly-CSharp.dll:.Pvr_ControllerInit
 d7027702cfdd8b5485a7a2bd24eb5ba9 Assembly-CSharp.dll:.Pvr_ControllerVisual
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DialogManager
+81dc5af3744a08050494c77f5012051e Assembly-CSharp.dll:.PvrGraphicRaycaster
