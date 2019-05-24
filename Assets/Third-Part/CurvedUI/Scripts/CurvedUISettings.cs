@@ -8,7 +8,7 @@ using TMPro;
 
 namespace CurvedUI
 {
-    [RequireComponent(typeof(Canvas))]
+    //[RequireComponent(typeof(Canvas))]
     public class CurvedUISettings : MonoBehaviour
     {
         #region ENUMS
@@ -123,6 +123,7 @@ namespace CurvedUI
 
         void Start()
         {
+            /*
             if (Application.isPlaying)
             {     //lets get rid of any raycasters and add our custom one
                 GraphicRaycaster castie = GetComponent<GraphicRaycaster>();
@@ -147,6 +148,7 @@ namespace CurvedUI
                 myCanvas = GetComponent<Canvas>();
 
             savedRadius = GetCyllinderRadiusInCanvasSpace();
+            */
         }
 
         void OnEnable()

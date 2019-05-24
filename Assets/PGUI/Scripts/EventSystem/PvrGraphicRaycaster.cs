@@ -14,9 +14,7 @@ public class PvrGraphicRaycaster : BaseRaycaster
         ThreeD = 2,
         All = 3,
     }
-
     private const int NO_EVENT_MASK_SET = -1;
-
     public bool ignoreReversedGraphics = true;
     public BlockingObjects blockingObjects = BlockingObjects.None;
     public LayerMask blockingMask = NO_EVENT_MASK_SET;
@@ -56,11 +54,14 @@ public class PvrGraphicRaycaster : BaseRaycaster
         }
     }
 
+    protected override void OnEnable()
+    {
+        base.OnEnable();
+    }
 
     public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
     {
         if (canvas == null||eventCamera==null) return;
-
         PvrBasePoint pointer = PvrLaserPointer.pointer;
         float hitDistance = float.MinValue;
         if (blockingObjects != BlockingObjects.None)
@@ -75,12 +76,12 @@ public class PvrGraphicRaycaster : BaseRaycaster
                 }
             }
         }
-        pointer.isHit = false;
         raycastResults.Clear();
         PreformGraphics(pointer,raycastResults);
+        pointer.isHit = false;
         for (int i = 0; i < raycastResults.Count; i++)
         {
-            GameObject go = raycastResults[i].gameObject;
+            GameObject go = raycastResults[0].gameObject;
             Plane plane = new Plane(go.transform.forward, go.transform.position);
             float enter = 0.0f;
             if (plane.Raycast(pointer.ray, out enter))
@@ -97,6 +98,7 @@ public class PvrGraphicRaycaster : BaseRaycaster
         for (int i = 0; i < graphics.Count; i++)
         {
             Graphic g = graphics[i];
+            Debug.Log(g.gameObject.name);
             if (g.depth == -1 || !g.raycastTarget)
             {
                 continue;
@@ -109,6 +111,7 @@ public class PvrGraphicRaycaster : BaseRaycaster
             if (g.Raycast(screenPos, eventCamera))
             {
                 sortedGraphics.Add(g);
+               // Debug.Log(g.gameObject.name);
             }
             sortedGraphics.Sort((g1,g2)=>g1.depth.CompareTo(g.depth));
             foreach (var s in sortedGraphics)

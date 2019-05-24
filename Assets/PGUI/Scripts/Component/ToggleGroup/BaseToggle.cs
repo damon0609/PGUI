@@ -1,11 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
+
+public interface ITogglePanel
+{
+    void Enter();
+    void Exit();
+}
 
 public class BaseToggle : MonoBehaviour
 {
-    public bool isSelected = false;
+    protected ITogglePanel targetPanel;
 
+    public bool isSelected = false;
     [HideInInspector]
     public ToggleGroup toggleGroup;
 
@@ -25,12 +34,13 @@ public class BaseToggle : MonoBehaviour
     public virtual void ResetState()
     {
         isSelected = false;
+        if (targetPanel != null)
+            targetPanel.Exit();
     }
 
     //点击状态
     protected virtual void OnClick(GameObject go)
     {
-        isSelected = true;
     }
 
     //悬浮状态

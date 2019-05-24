@@ -1,8 +1,8 @@
 Android
 PlayerPath?
-D:/Damon/Year_2019/Work/apk/demo03.apk
+D:/Damon/Year_2019/Work/apk/NearUI.apk
 SceneListBegin?
-Assets/PGUI/demo03.unity
+Assets/PicoMobileSDK/Pvr_Controller/Scenes/NearUI.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Callback
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -24,7 +24,7 @@ c6997fc5721155b77c64f6149b585ca9 Assembly-CSharp.dll:.Pvr_UICanvas
 a8490ca459a7be196d70e4840f892d87 Assembly-CSharp.dll:CurvedUI.CurvedUISettings
 60c9557bccfdbd492b40ba21ea876260 Assembly-CSharp.dll:.UGUIEventListener
 6a9dc1b2a78aca546f6005f0a0866c4f Assembly-CSharp.dll:.Pvr_InputModule
-136b90b090f8fdfb7ae6ae78961de039 Assembly-CSharp.dll:.TestButtton
+d2ab323d62b3be8377cd6dd9ce2383a1 Assembly-CSharp.dll:.TestButtton
 f266a453cd4bfbe81533762a3e3589f4 DOTween.dll:DG.Tweening.Core.DOTweenComponent
 fcc2fea558c4b91e44c34f4718aafdab DOTween.dll:DG.Tweening.Core.DOTweenSettings
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -181,7 +181,7 @@ e65d75bc3eb7a3f0a3976c23043e7451 Assembly-CSharp.dll:.PvrRay
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
-890fc157e453056f2f1ff856d439e86f Assembly-CSharp.dll:.LayerManager
+0ab382d6efc17d62395823e3efb6da67 Assembly-CSharp.dll:.LayerManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Pvr_UIDropZone
 9e0ef5bf862444b5dc48b5a99554ce7c UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
@@ -193,6 +193,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+81dc5af3744a08050494c77f5012051e Assembly-CSharp.dll:.PvrGraphicRaycaster
 6d1cc6db84f098c82793c0bde1c7eaf7 Assembly-CSharp.dll:.Pvr_ControllerPower
 9198d6d3dedcca0bc22840775a95b17b Assembly-CSharp.dll:.Pvr_UnitySDKEye
 2d4c42c7c0769ef2266089b10741e7a7 Assembly-CSharp.dll:.Pvr_ControllerModuleInit
@@ -212,4 +213,8 @@ a2313de45ed47f1a12bb2d80e8b2de54 Assembly-CSharp.dll:.Pvr_UIGraphicRaycaster
 3ede8da4b1b086eaa1eb91c173bc2a08 Assembly-CSharp.dll:.Pvr_ControllerInit
 d7027702cfdd8b5485a7a2bd24eb5ba9 Assembly-CSharp.dll:.Pvr_ControllerVisual
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DialogManager
-81dc5af3744a08050494c77f5012051e Assembly-CSharp.dll:.PvrGraphicRaycaster
+b5ced2ef69400e8be6f6526c2963ae69 Assembly-CSharp.dll:.StoreManager
+d467880db5bb28262e268fb365ab9763 Assembly-CSharp.dll:.HomeManager
+d2db098cd3d83c989f22f953af07c010 Assembly-CSharp.dll:.NearUIManager
+09d5b421fc0bb75276499e38fb329d1a Assembly-CSharp.dll:.RayController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ExpandAll

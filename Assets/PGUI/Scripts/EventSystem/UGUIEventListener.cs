@@ -8,6 +8,7 @@ public class UGUIEventListener : EventTrigger
 
     public System.Action<GameObject> onClick;
     public System.Action<GameObject, bool> onHover;
+    public System.Action<GameObject, bool> onPress;
 
     public static UGUIEventListener Get(GameObject go)
     {
@@ -17,6 +18,20 @@ public class UGUIEventListener : EventTrigger
         if (listener == null)
             listener = go.AddComponent<UGUIEventListener>();
         return listener;
+    }
+
+    public override void OnPointerDown(PointerEventData eventData)
+    {
+        base.OnPointerDown(eventData);
+        if (onPress != null)
+            onPress(eventData.pointerEnter, true);
+    }
+
+    public override void OnPointerUp(PointerEventData eventData)
+    {
+        base.OnPointerUp(eventData);
+        if (onPress != null)
+            onPress(eventData.pointerEnter, false);
     }
 
     public override void OnPointerClick(PointerEventData eventData)

@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class ToggleGroup : MonoBehaviour {
 
     public BaseToggle[] toggles;
 
+    [HideInInspector]
     public BaseToggle curToggle;
+
+    [HideInInspector]
     public BaseToggle lastToggle;
+
+
+
 
 	void Start () {
 
